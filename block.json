@@ -1,0 +1,24 @@
+{
+	"apiVersion": 2,
+	"name": "create-block/gutenberg-color-settings",
+	"version": "0.1.0",
+	"title": "Gutenberg Color Settings",
+	"category": "widgets",
+	"icon": "smiley",
+	"description": "Example block written with ESNext standard and JSX support – build step required.",
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"textColor": {
+			"type": "string"
+		},
+		"backgroundColor": {
+			"type": "string"
+		}
+	},
+	"textdomain": "gutenberg-color-settings",
+	"editorScript": "file:./build/index.js",
+	"editorStyle": "file:./build/index.css",
+	"style": "file:./build/style-index.css"
+}
