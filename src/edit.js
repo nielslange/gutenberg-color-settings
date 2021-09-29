@@ -6,15 +6,15 @@ import {
 	InspectorControls,
 	withColors,
 	PanelColorSettings,
-} from "@wordpress/block-editor";
-import { PanelBody, TextControl } from "@wordpress/components";
-import { __ } from "@wordpress/i18n";
+} from '@wordpress/block-editor';
+import { PanelBody, TextControl } from '@wordpress/components';
+import { __ } from '@wordpress/i18n';
 
 /**
  * Internal dependencies
  */
-import "./editor.scss";
-import Block from "./block";
+import './editor.scss';
+import Block from './block';
 
 function ColorEdit({
 	attributes,
@@ -29,15 +29,24 @@ function ColorEdit({
 			<InspectorControls>
 				<PanelBody title="Settings" initialOpen={true}>
 					<PanelColorSettings
-						title={__("Color Settings", "free-shipping-progress-bar")}
+						title={__(
+							'Color Settings',
+							'free-shipping-progress-bar'
+						)}
 						colorSettings={[
 							{
-								label: __("Message Color", "free-shipping-progress-bar"),
+								label: __(
+									'Message Color',
+									'free-shipping-progress-bar'
+								),
 								value: textColor.color,
 								onChange: setTextColor,
 							},
 							{
-								label: __("Progress Bar Color", "free-shipping-progress-bar"),
+								label: __(
+									'Progress Bar Color',
+									'free-shipping-progress-bar'
+								),
 								value: backgroundColor.color,
 								onChange: setBackgroundColor,
 							},
@@ -50,9 +59,9 @@ function ColorEdit({
 	);
 }
 
-const Edit = withColors("color", {
-	textColor: "color",
-	backgroundColor: "color",
+const Edit = withColors('color', {
+	textColor: 'color',
+	backgroundColor: 'color',
 })(ColorEdit);
 
 export default Edit;

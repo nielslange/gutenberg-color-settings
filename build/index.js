@@ -30,11 +30,11 @@ function Edit({
   textColor,
   backgroundColor
 }) {
-  const textColorClass = (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.getColorClassName)("color", textColor);
-  const backgroundColorClass = (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.getColorClassName)("background-color", backgroundColor);
+  const textColorClass = (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.getColorClassName)('color', textColor);
+  const backgroundColorClass = (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.getColorClassName)('background-color', backgroundColor);
   const divClasses = classnames__WEBPACK_IMPORTED_MODULE_2___default()({
-    "has-text-color": color || textColor,
-    "has-background": color || backgroundColor,
+    'has-text-color': color || textColor,
+    'has-background': color || backgroundColor,
     [textColorClass]: textColorClass,
     [backgroundColorClass]: backgroundColorClass
   });
@@ -90,22 +90,22 @@ function ColorEdit({
     title: "Settings",
     initialOpen: true
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.PanelColorSettings, {
-    title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)("Color Settings", "free-shipping-progress-bar"),
+    title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)('Color Settings', 'free-shipping-progress-bar'),
     colorSettings: [{
-      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)("Message Color", "free-shipping-progress-bar"),
+      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)('Message Color', 'free-shipping-progress-bar'),
       value: textColor.color,
       onChange: setTextColor
     }, {
-      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)("Progress Bar Color", "free-shipping-progress-bar"),
+      label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)('Progress Bar Color', 'free-shipping-progress-bar'),
       value: backgroundColor.color,
       onChange: setBackgroundColor
     }]
   }))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_block__WEBPACK_IMPORTED_MODULE_5__["default"], attributes));
 }
 
-const Edit = (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.withColors)("color", {
-  textColor: "color",
-  backgroundColor: "color"
+const Edit = (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.withColors)('color', {
+  textColor: 'color',
+  backgroundColor: 'color'
 })(ColorEdit);
 /* harmony default export */ __webpack_exports__["default"] = (Edit);
 
@@ -125,7 +125,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _edit__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./edit */ "./src/edit.js");
 /* harmony import */ var _save__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./save */ "./src/save.js");
 /**
- * External dependencies
+ * Externaldependencies
  */
 
 /**
@@ -141,7 +141,7 @@ __webpack_require__.r(__webpack_exports__);
  * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-registration/
  */
 
-(0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__.registerBlockType)("create-block/gutenberg-color-settings", {
+(0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__.registerBlockType)('create-block/gutenberg-color-settings', {
   /**
    * @see ./edit.js
    */
